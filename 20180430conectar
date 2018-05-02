@@ -1,0 +1,12 @@
+<?php
+
+$server="localhost";
+$usuario="root";
+$pass="";
+$nombreBase="curso_php";
+
+$conexion=new mysqli($server,$usuario,$pass,$nombreBase);
+
+echo "Tipo: ". gettype($conexion)."<br />";
+echo "Contenido de la variable:";
+var_dump($conexion);
